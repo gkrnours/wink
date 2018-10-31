@@ -1,6 +1,6 @@
 {
   "main": "index.html",
-  "name": "htmle",
+  "name": "wink-poker",
   "devDependencies": {
     "grunt": "*",
     "grunt-contrib-clean": "*",
