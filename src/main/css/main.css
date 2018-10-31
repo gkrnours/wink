@@ -16,29 +16,24 @@ html {
 }
 
 body {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: calc( 50vh / 2 );
-	min-width: 50vh;
-	max-width: 100vw;
-	margin: 0;
+	position: relative;
+	width: 50vh;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 0;
 	background: navy;
-	color: cyan;
+	color: white;
 }
 
-#menu ul {
-	position: absolute;
-	top: 30%;
-	left: 0;
-	right: 0;
-	padding: .5rem;
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
-}
-#menu ul li{
-	display: none;
-}
-#menu ul li.active {
-	display: block;
+@media (max-aspect-ratio: 1/2) {
+	/* It's not wide enough to accomodate the screen */
+	body {
+		height: 200vw;
+		width: 100vw;
+		margin-top: calc(50vh - 100vw);
+	}
+
+	* {
+		color: blue;
+	}
 }
