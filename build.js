@@ -6,9 +6,9 @@ var appVersion = '1.0.0';
 
 function build_version(VERSION){
 	VERSION.build().then(function () {
-	   console.log('all done!');
+		console.log('all done!');
 	}).catch(function (error) {
-	    console.log(error);
+		console.log(error);
 	});
 }
 
@@ -17,11 +17,11 @@ appName = process.argv[3];
 appVersion = process.argv[4];
 
 var options_desktop = {
-    appName: appName,
-    appVersion: appVersion,
+	appName: appName,
+	appVersion: appVersion,
 	platforms: ['win64','osx64','linux'],
 	platforms: ['win64'],
-    version: '0.26.6',
+	version: '0.26.6',
 	files: ['./temp/desktop/**/**'],
 	buildDir: './dist/'+appName+'_desktop - '+appVersion,
 	credits: './temp/desktop/index.html',
@@ -30,10 +30,10 @@ var options_desktop = {
 	winIco: './src/icons/appIcon.ico',
 };
 var options_steam = {
-    appName: appName,
-    appVersion: appVersion,
+	appName: appName,
+	appVersion: appVersion,
 	platforms: ['win64','osx64','linux'],
-    version: '0.26.6',
+	version: '0.26.6',
 	files: ['./temp/steam/**/**'],
 	buildDir: './dist/'+appName+'_steam - '+appVersion,
 	credits: './temp/steam/index.html',
@@ -42,10 +42,10 @@ var options_steam = {
 	winIco: './src/icons/appIcon.ico',
 };
 var options_itch = {
-    appName: appName,
-    appVersion: appVersion,
+	appName: appName,
+	appVersion: appVersion,
 	platforms: ['win64','osx64','linux'],
-    version: '0.26.6',
+	version: '0.26.6',
 	files: ['./temp/itch/**/**'],
 	buildDir: './dist/'+appName+'_itch - '+appVersion,
 	credits: './temp/itch/index.html',
