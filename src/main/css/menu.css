@@ -1,0 +1,16 @@
+
+#menu ul {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	padding: .5rem;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+#menu ul li{
+	display: none;
+}
+#menu ul li.active {
+	display: block;
+}
